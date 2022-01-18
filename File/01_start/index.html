@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My first three.js app</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../../js/three.js"></script>
+    <script>
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        // three.js里有几种不同的相机，在这里，我们使用的是PerspectiveCamera（透视摄像机）
+        75, // 视野角度（FOV）
+        window.innerWidth / window.innerHeight, // 长宽比（aspect ratio）
+        0.1, // 接下来的两个参数是近截面（near）和远截面（far）
+        1000 // 当物体某些部分比摄像机的远截面远或者比近截面近的时候
+      ); // 该这些部分将不会被渲染到场景中。或许现在你不用担心这个值的影响
+      // 但未来为了获得更好的渲染性能，你将可以在你的应用程序里去设置它
+
+      const renderer = new THREE.WebGLRenderer(); // 渲染器
+      renderer.setSize(window.innerWidth, window.innerHeight); // 渲染器的尺寸
+      document.body.appendChild(renderer.domElement);
+      // 我们将renderer（渲染器）的dom元素（renderer.domElement）添加到我们的HTML文档中
+
+      const geometry = new THREE.BoxGeometry(); // 创建一个立方体
+      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // 材质 颜色
+      const cube = new THREE.Mesh(geometry, material); // Mesh（网格） 网格包含一个几何体以及作用在此几何体上的材质
+      scene.add(cube);
+
+      camera.position.z = 5;
+
+      function animate() {
+        requestAnimationFrame(animate);
+
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+
+        renderer.render(scene, camera);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
