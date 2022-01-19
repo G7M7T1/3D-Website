@@ -26,8 +26,7 @@
             50,0,10,
         ]);
 
-        let attribute = new THREE.BufferAttribute(muti_Points,3);
-        geometry.attributes.position = attribute;
+        geometry.setAttribute( 'position', new THREE.BufferAttribute( muti_Points, 3 ) );
 
         let axisHelper = new THREE.AxisHelper(300);
         scene.add(axisHelper);
