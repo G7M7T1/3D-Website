@@ -15,3 +15,7 @@ G
 File/03_muti/point.html,7\6\76acf6a728aa37e08c6dd8d8727b020bc8fc7834
 L
 File/04_point/wireframe.html,5\2\52cd8b12c0bb8b2be4b32be40717e1accab29901
+I
+3D/Basic scene/index.html,c\d\cd99baedb0be5a1645f3b01f744f1c4f0cbbbe6c
+H
+3D/Basic scene/script.js,d\a\da4c4ba4e6c20a1fe8ed438b5ace31b04ecbebb7
