@@ -1,4 +1,4 @@
-// 加入场景
+// Scene
 const scene = new THREE.Scene();
 
 // Object
@@ -25,7 +25,7 @@ const canvas = document.querySelector("canvas.webgl");
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
-  canvas: canvas,
+  canvas
 });
 renderer.setSize(sizes.width, sizes.height);
 
