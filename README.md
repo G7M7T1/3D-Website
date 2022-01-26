@@ -6,3 +6,4 @@ Hello everyone who visits this page, Just like the name of this website, most of
 1. [First-Box](http://3d.g7m7t1.net/pages/3d-box/) | mouse control and fullscreen mod
 2. [50-Triangles](http://3d.g7m7t1.net/pages/50-triangles/) | mouse control and fullscreen mod
 3. [GUI-3DBox](http://3d.g7m7t1.net/pages/gui-box/) | gui and mouse control and fullscreen mod
+4. [Minecraft-Textures](http://3d.g7m7t1.net/pages/minecraft-textures/) | gui and mouse control and fullscreen mod with textures
