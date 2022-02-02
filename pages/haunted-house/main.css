@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.MainText {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=main.css.map*/
